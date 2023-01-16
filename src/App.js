@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Task from './features/taskslist/Task';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ height: '100vh', overflowX: 'hidden' }}>
+        <div className="row h-100">
+          <div className="col-sm-2 bg-secondary d-none d-sm-block"></div>
+
+          <div className="col-sm-10 d-flex align-items-center justify-content-center justify-content-sm-start">
+            <Task />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
