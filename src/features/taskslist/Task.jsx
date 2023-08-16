@@ -1,9 +1,9 @@
-import React from 'react';
-import { useState } from 'react';
-import TaskForm from './TaskForm';
-import TaskList from './TaskList';
+import React from "react";
+import { useState } from "react";
+import TaskForm from "./TaskForm";
+import TaskList from "./TaskList";
 
-import { useGetTodosQuery } from '../api/apiSlice';
+import { useGetTodosQuery } from "../api/apiSlice";
 
 const Task = () => {
   const { data: tasks, isSuccess } = useGetTodosQuery();
@@ -32,6 +32,7 @@ const Task = () => {
     return (
       <>
         <div className="rounded rounded-1 col-lg-5 col-sm-8 col-10 py-5">
+          <h3 className="text-info">Todo List</h3>
           <div className="input-group ">
             <button
               type="button"
